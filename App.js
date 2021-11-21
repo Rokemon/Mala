@@ -13,6 +13,8 @@ import SavedScreen from './screens/Saved';
 import ReferScreen from './screens/Refer';
 import DrawerItems from './constants/DrawerItems';
 import Header from './components/Header';
+import { DRAWER_ITEM_PROFILE, DRAWER_ITEM_SAVED, DRAWER_ITEM_SETTINGS } from './constants/DrawerItems';
+
 
 
 const Drawer = createDrawerNavigator();
@@ -82,9 +84,9 @@ export default function App() {
           
             }} 
             component={
-              drawer.name==='Profile' ? ProfileScreen 
-                : drawer.name==='Settings' ? SettingsScreen 
-                  : drawer.name==='Saved Items' ? SavedScreen 
+              drawer.name=== DRAWER_ITEM_PROFILE ? ProfileScreen 
+                : drawer.name=== DRAWER_ITEM_SETTINGS ? SettingsScreen 
+                  : drawer.name=== DRAWER_ITEM_SAVED ? SavedScreen 
                     : ReferScreen
             }
           />)

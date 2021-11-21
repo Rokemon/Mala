@@ -1,21 +1,26 @@
+export const DRAWER_ITEM_PROFILE = "Profile"
+export const DRAWER_ITEM_SETTINGS = "Settings"
+export const DRAWER_ITEM_SAVED = "Saved Items"
+export const DRAWER_ITEM_REFER = "Refer a friend"
+
 export default [
     {
-        name: 'Profile',
+        name: DRAWER_ITEM_PROFILE,
         iconType: 'Material',
         iconName: 'face-profile'
     },
     {
-        name: 'Settings',
+        name: DRAWER_ITEM_SETTINGS,
         iconType: 'Feather',
         iconName: 'settings'
     },
     {
-        name: 'Saved items',
+        name: DRAWER_ITEM_SAVED,
         iconType: 'Material',
         iconName: 'bookmark-check-outline'
     },
     {
-        name: 'Refer a friend',
+        name: DRAWER_ITEM_REFER,
         iconType: 'FontAwesome5',
         iconName: 'user-friends'
     }
